@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-size: 14px;
+    display: grid;
+    grid-template-areas: 'header header header header'
+    'nav nav nav nav'
+    'section section section aside'
+    'ney ney ney ney'
+    'footer footer footer footer';
+    
+    grid-template-rows: 10vh 10vh 75vh 30vh 15vh;                        
+    grid-template-columns: 24vw 24vw 24vw 26.5vw;
+}
+
+nav{
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+header{
+    grid-area: header;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    height: 100%;
+    border-radius: 40px;
+}
+
+section{
+    grid-area: section;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.teste-2 {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+
+
+}
+
+.teste-2 div iframe{
+height: 90%;
+
+}
+
+.ney{
+    grid-area: ney;
+    background-image: url("img/neyminho.jpg");
+    background-size: 40%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+aside{
+    grid-area: aside;
+    background-color: green;
+}
+
+/* A medida "em" multiplica o valor dos px do pai, mesma formula para porcentagem no excel */
+
+
+/* A medida "rem" multiplica o valor dos px do body (matriz), mesma formula para porcentagem no excel */
+.teste-3{
+    font-size: 1.2rem;
+}
